@@ -1,0 +1,78 @@
+@import "../bs-scss/scss/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "../bs-scss/scss/functions";
+
+$navbar-dark-color: #999ba0;
+$navbar-dark-hover-color: #fff;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+$custom-spacers: (
+  6: $spacer * 10,
+  7: $spacer * 20,
+  8: $spacer * 30,
+  9: $spacer * 40,
+  10: $spacer * 50,
+  11: $spacer * 60,
+);
+
+$spacers: map-merge($spacers, $custom-spacers);
+
+$gray-600: #808080;
+
+@import "../bs-scss/scss/variables";
+
+@import "../bs-scss/scss/maps";
+@import "../bs-scss/scss/mixins";
+@import "../bs-scss/scss/utilities";
+
+// Layout & components
+@import "../bs-scss/scss/root";
+@import "../bs-scss/scss/reboot";
+@import "../bs-scss/scss/type";
+@import "../bs-scss/scss/images";
+@import "../bs-scss/scss/containers";
+@import "../bs-scss/scss/grid";
+@import "../bs-scss/scss/tables";
+@import "../bs-scss/scss/forms";
+@import "../bs-scss/scss/buttons";
+@import "../bs-scss/scss/transitions";
+@import "../bs-scss/scss/dropdown";
+@import "../bs-scss/scss/button-group";
+@import "../bs-scss/scss/nav";
+@import "../bs-scss/scss/navbar";
+@import "../bs-scss/scss/card";
+@import "../bs-scss/scss/accordion";
+@import "../bs-scss/scss/breadcrumb";
+@import "../bs-scss/scss/pagination";
+@import "../bs-scss/scss/badge";
+@import "../bs-scss/scss/alert";
+@import "../bs-scss/scss/progress";
+@import "../bs-scss/scss/list-group";
+@import "../bs-scss/scss/close";
+@import "../bs-scss/scss/toasts";
+@import "../bs-scss/scss/modal";
+@import "../bs-scss/scss/tooltip";
+@import "../bs-scss/scss/popover";
+@import "../bs-scss/scss/carousel";
+@import "../bs-scss/scss/spinners";
+@import "../bs-scss/scss/offcanvas";
+@import "../bs-scss/scss/placeholders";
+
+// Helpers
+@import "../bs-scss/scss/helpers";
+
+// Utilities
+@import "../bs-scss/scss/utilities/api";
+// scss-docs-end import-stack

@@ -1,0 +1,109 @@
+@import "./bs-override.scss";
+@import "./partials/fonts.scss";
+
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: sans-serif;
+
+  h1 {
+    @media (max-width: 700px) {
+      font-size: calc(1rem + 1.5vw);
+    }
+    @media (max-width: 700px) {
+      font-size: calc(0.8rem + 1.5vw);
+    }
+    flex-shrink: 0;
+  }
+
+  h3 {
+    @media (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+nav {
+  background-image: linear-gradient(#060606, #131313);
+
+  .nav-elem {
+    width: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: white;
+    }
+
+    button {
+      width: 80px;
+      height: 40px;
+    }
+  }
+}
+
+.footer-elem {
+  @extend .nav-elem;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.navbar-gradient {
+  background-image: linear-gradient(#000, transparent) !important;
+}
+
+form {
+  color: #c0bab4 !important;
+
+  input {
+    max-width: 340px !important;
+  }
+
+  select {
+    width: 130px !important;
+  }
+
+  .wrap {
+    border-top: 1px solid #2b2b2b !important;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+
+    .form-check-input {
+      font-size: 1.8rem !important;
+      vertical-align: middle !important;
+
+      span {
+        vertical-align: middle !important;
+      }
+    }
+  }
+}
+
+.carousel-control-prev {
+  width: unset;
+  opacity: 1;
+}
+.carousel-control-next {
+  width: unset;
+  opacity: 1;
+}
+
+button:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+footer {
+  color: $secondary;
+  p {
+    font-size: 1rem;
+    @media (max-width: 575.98px) {
+      font-size: 0.8rem;
+    }
+  }
+  i {
+    color: $secondary;
+  }
+}
