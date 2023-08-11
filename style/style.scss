@@ -1,3 +1,8 @@
+$body-bg: #000;
+$body-color: #fff;
+$border-radius: 0;
+$form-range-track-width: auto;
+
 @import "./bs-override.scss";
 @import "./partials/fonts.scss";
 
@@ -67,8 +72,11 @@ form {
     max-width: 340px !important;
   }
 
-  select {
-    width: 130px !important;
+  .form-select {
+    width: auto;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .wrap {
