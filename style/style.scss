@@ -21,6 +21,11 @@ body {
       font-size: 1rem;
     }
   }
+
+  button:hover {
+    color: black !important;
+    background-color: white !important;
+  }
 }
 
 nav {
@@ -46,8 +51,9 @@ nav {
 
 .footer-elem {
   @extend .nav-elem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 0;
+  margin-right: 20px;
 }
 
 .navbar-gradient {
@@ -85,14 +91,17 @@ form {
   width: unset;
   opacity: 1;
 }
+
+.carousel-control-prev:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
 .carousel-control-next {
   width: unset;
   opacity: 1;
 }
-
-button:hover {
-  color: black !important;
-  background-color: white !important;
+.carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
 }
 
 footer {
